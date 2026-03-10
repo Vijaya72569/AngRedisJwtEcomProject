@@ -1,0 +1,20 @@
+<p>cart works!</p>
+<div *ngIf="cartItems.length > 0; else empty">
+  <div *ngFor="let item of cartItems" style="border: 1px solid #ccc; margin-bottom: 1rem; padding: 1rem;">
+    <img [src]="item.image.url" width="100" height="100">
+    <p>Price: ₹{{ item.image.price }}</p>
+     <p>
+      Quantity:
+      <button (click)="decrease(item.image.id)">−</button>
+      {{ item.quantity }}
+      <button (click)="increase(item.image.id)">+</button>
+    </p>
+    <p>Subtotal: ₹{{ item.image.price * item.quantity }}</p>
+     <button (click)="remove(item.image.id)">Remove</button>
+  </div>
+    <h3>Total: ₹{{ getTotalPrice() }}</h3>
+</div>
+<ng-template #empty>
+  <p>Your cart is empty.</p>
+</ng-template>
+<button *ngIf="cartItems.length > 0">Place Order</button>

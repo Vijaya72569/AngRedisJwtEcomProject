@@ -1,0 +1,11 @@
+<p>login works!</p>
+<h1>Login</h1>
+<input type="email" [(ngModel)]="email" placeholder="email">
+<br>
+<input type="password" [(ngModel)]="password" placeholder="password">
+<br>
+<button type="submit" (click)="login()">login</button>
+<p>
+<button type="button" (click)="signin()">Signin</button>
+</p>
+<p style="color: red;">{{errormessage}}</p>

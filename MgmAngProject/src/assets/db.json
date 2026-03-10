@@ -1,0 +1,17 @@
+{
+  "images": [
+    { "id": 1, "url": "assets/image12.jpg", "price": 500 },
+    { "id": 2, "url": "assets/image13.jpg", "price": 500 },
+    { "id": 3, "url": "assets/image14.jpg", "price": 500 },
+     { "id": 4, "url": "assets/image15.jpg", "price": 1100 },
+    { "id": 5, "url": "assets/image16.jpg", "price": 1100 },
+    { "id": 6, "url": "assets/image17.jpg", "price": 900 },
+     { "id": 7, "url": "assets/image18.jpg", "price": 900 },
+    { "id": 8, "url": "assets/image19.jpg", "price": 900 },
+    { "id": 9, "url": "assets/image20.jpg", "price": 400 },
+     { "id": 10, "url": "assets/image17.jpg", "price": 900 },
+     { "id": 11, "url": "assets/image18.jpg", "price": 900 },
+    { "id": 12, "url": "assets/image19.jpg", "price": 900 },
+    { "id": 13, "url": "assets/image20.jpg", "price": 400 }
+  ]
+}

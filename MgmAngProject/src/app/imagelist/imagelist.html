@@ -1,0 +1,21 @@
+<h2>Mgm Mart Gallery</h2>
+
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+  <div *ngFor="let image of images" style="border: 1px solid #ccc; padding: 1rem;">
+    <img [src]="image.url" width="150" height="150">
+    <p>Price: ₹{{ image.price }}</p>
+    <button (click)="addToCart(image)">Add to Cart</button>
+ </div>
+</div>
+
+<!--
+<h2>Mgm Mart Gallery</h2>
+
+<div *ngIf="images && images.length > 0" style="display:flex; gap:1rem; flex-wrap:wrap;">
+  <div *ngFor="let image of images" style="border:1px solid #ccc; padding:1rem;">
+    <img [src]="image.url" width="150" height="150">
+    <p>Price: ₹{{ image.price }}</p>
+    <button (click)="addToCart(image)">Add to Cart</button>
+  </div>
+</div>
+-->
